@@ -14,6 +14,7 @@ from time import sleep
 from csv import writer
 import sys
 
+
 def request_bs4_func(url: str) -> BeautifulSoup:
     req = get(url)
     return BeautifulSoup(req.text, 'html.parser')
@@ -26,11 +27,11 @@ def main():
         if len(sys.argv) != 3:
             print(' -> !! "Incorrect arguments" !! -> Check or help(README.md)?')
             sys.exit(1)
-        # url_arg = Výsledky hlasování za územní celky (2017) – výběr obce //page
         url_arg = sys.argv[1]
         name_csv_arg = sys.argv[2]
 
         scrap_data = defaultdict(list)
+
         # // 'OKRES' PAGE >
         okres_bs4 = request_bs4_func(url_arg)
         scrap_data['Číslo:'] = [cislo.text for cislo in okres_bs4.find_all(
