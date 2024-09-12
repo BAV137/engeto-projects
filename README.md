@@ -1,2 +1,2 @@
 # Engeto_Projects
-Engeto (Python Academie)
+Engeto (Python Akademie)

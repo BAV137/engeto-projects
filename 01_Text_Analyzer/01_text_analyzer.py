@@ -173,9 +173,10 @@ keys = sorted(lenth_quantity)
 keys_values = sorted(lenth_quantity.values())
 
 line('X')
-print(f' -> LEN| {'OCCURENCES':^{keys_values[-1]}} |NR. ')
+print(f' -> LEN| {"OCCURENCES":^{keys_values[-1]}} |NR. ')
 line('x')
 for key in keys:
     stars = '*' * lenth_quantity[key]
     print(f'{key:>{7}}| {stars:<{keys_values[-1]}} |{lenth_quantity[key]}')
 line('X')
+exit()
