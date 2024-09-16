@@ -59,8 +59,7 @@ https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ)
 
    Example:  
 
-   `python 01_elections_scraper.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2104" 
-   "vysl_hlas_Kolin"`
+   `python 01_elections_scraper.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2104" "vysl_hlas_Kolin"`
 
 4. **Check Results:**  
    The file `vysl_hlas_Kolin.csv` will be saved in the script folder. Open it with your file explorer.
