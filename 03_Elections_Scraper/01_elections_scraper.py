@@ -6,6 +6,7 @@ email: boykoartur@gmail.com
 discord: bavdisbagc
 """
 
+
 import logging
 import sys
 from requests import get
@@ -13,6 +14,7 @@ from bs4 import BeautifulSoup
 from collections import defaultdict
 from time import sleep
 from csv import writer
+
 
 logging.basicConfig(
     level=logging.INFO,
